@@ -1,0 +1,90 @@
+<html lang="ru"><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="anypay-verification" content="e36b59727135b413ef14b14240c2">
+    <meta name="theme-color" content="#0c0d0f">
+    <title>Well Visual — визуалы для Minecraft 1.21.11</title>
+    <script>
+        (function () {
+            function blockSave(event) {
+                if (!(event.ctrlKey || event.metaKey) || event.code !== 'KeyS') return;
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                return false;
+            }
+            window.addEventListener('keydown', blockSave, true);
+            window.addEventListener('keypress', blockSave, true);
+            window.addEventListener('keyup', blockSave, true);
+        })();
+    </script>
+    <link rel="stylesheet" href="styles/site.css?v=wellvisual2">
+    <link rel="stylesheet" href="styles/rockstar-theme.css?v=wellvisual2">
+    <script defer="" src="scripts/silk-background.js?v=1784935233"></script>
+    <script defer="" src="scripts/purchase-silk.js?v=1784935233"></script>
+    <script defer="" src="scripts/site.js?v=1784935233"></script>
+    </head>
+<body data-page="home">
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-brand" href="#home" aria-label="Well Visual, главная">
+                <img class="brand-mark" src="images/well-visual-logo.png" alt="">
+                <span class="title">Well Visual</span>
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a class="is-active" href="#home">Главная</a></li>
+                    <li><a href="#features">Возможности</a></li>
+                    <li><a href="#terms">Условия</a></li>
+                    <li><a href="#support">Поддержка</a></li>
+                                    </ul>
+            </nav>
+        </div>
+    </header>
+<main class="home-page">
+    <section id="home" class="mission" aria-labelledby="mission-title">
+        <p class="section-label">Well Visual</p>
+        <h1 id="mission-title">Новый взгляд<br>на Minecraft.</h1>
+        <p class="mission-copy">Визуальные улучшения для Minecraft 1.21.11 — яркая и атмосферная картинка без изменения игрового процесса.</p>
+        <div class="hero-actions">
+                            <a class="primary-action" href="#features">Смотреть возможности</a>
+                    </div>
+    </section>
+    <section id="features" class="info-section" aria-labelledby="features-title">
+        <div class="info-heading">
+            <p class="section-label">ВОЗМОЖНОСТИ</p>
+            <h2 id="features-title">Визуалы, которые<br>меняют атмосферу</h2>
+            <p>Well Visual улучшает восприятие мира Minecraft 1.21.11, сохраняя знакомый стиль игры.</p>
+        </div>
+        <div class="feature-grid">
+            <article class="feature-card"><span>01</span><h3>Чистая картинка</h3><p>Продуманные цвета, мягкое освещение и аккуратные визуальные детали без перегруза.</p></article>
+            <article class="feature-card"><span>02</span><h3>Версия 1.21.11</h3><p>Визуалы подготовлены специально для актуальной версии Minecraft 1.21.11.</p></article>
+            <article class="feature-card"><span>03</span><h3>Лёгкая установка</h3><p>Понятный запуск и быстрый доступ к обновлениям через сообщество Well Visual.</p></article>
+        </div>
+    </section>
+    <section id="terms" class="info-section compact-section" aria-labelledby="terms-title">
+        <div class="info-heading"><p class="section-label">УСЛОВИЯ</p><h2 id="terms-title">Просто и понятно</h2></div>
+        <div class="text-panel"><p>Используйте Well Visual только с Minecraft 1.21.11. Не распространяйте изменённые сборки от имени проекта и загружайте обновления только из официальных каналов.</p></div>
+    </section>
+    <section id="support" class="info-section compact-section" aria-labelledby="support-title">
+        <div class="info-heading"><p class="section-label">ПОДДЕРЖКА</p><h2 id="support-title">Мы на связи</h2><p>Новости, обновления и помощь доступны в наших официальных сообществах.</p></div>
+        <div class="social-links" aria-label="Социальные сети">
+            <a class="social-link" href="https://discord.gg/zAfQnhHwZt" target="_blank" rel="noopener noreferrer" aria-label="Discord"><img src="images/discord.png" alt="" width="24" height="24"><span>DISCORD</span></a>
+            <a class="social-link" href="https://t.me/wellvisulas_official" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="images/telegram.png" alt="" width="24" height="24"><span>TELEGRAM</span></a>
+        </div>
+    </section>
+</main>
+    <footer class="site-footer">
+        <span>© 2026 Well Visual</span>
+    </footer>
+
+
+<script>
+    const navigationLinks = document.querySelectorAll('.site-header nav a');
+    navigationLinks.forEach((link) => link.addEventListener('click', () => {
+        navigationLinks.forEach((item) => item.classList.toggle('is-active', item === link));
+    }));
+</script>
+</body></html>
